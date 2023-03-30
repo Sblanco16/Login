@@ -36,7 +36,7 @@ function listar() {
         if(cedula =="" || nombre =="" ||  nombre2 =="" || apellido =="" || apellido2=="" || edad=="" || direccion=="" || correo==""){
             swal.fire({
                 title: "Error!",
-                text: "Por favor ingrese los campos completos",
+                text: "Por favor rectifique haber llenado todos los campos",
                 icon:"error",
                 allowDutsideClick: true,
                 allowEscapeKey: false,
