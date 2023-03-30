@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card mt-5 mb-5" style="max-width: 500rem;">
+                    <div class="card-header text-center"> <h1>Registro de usuario</h1></div>
+                    <div class="card-body"></div>
+                    <div class="card-text">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid"
+                                    src="https://thumbs.dreamstime.com/b/avatar-humano-hombre-gente-persona-perfil-l%C3%ADnea-de-puntos-azul-icono-del-usuario-148749238.jpg"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+
+                                <label for="cedula" class="form-label clo text-center mt-3" > N. Identificación:</label>
+                                <input type="number" class="form-control" id="cedula" placeholder="Identificación">
+
+                                <label for="nombre" class="form-label clo text-center mt-3"> Primer Nombre:</label> 
+                                <input class="form-control" id="nombre" type="text" placeholder="Primer Nombre">
+
+                                <label for="nombre2" class="form-label clo text-center mt-3"> Segundo Nombre:</label> 
+                                <input class="form-control" id="nombre2" type="text" placeholder="Segundo Nombre">
+
+                                <label for="apellido" class="form-label clo text-center mt-3"> Primer Apellido:</label>
+                                <input class="form-control" id="apellido" type="text" placeholder=" Primer Apellido">
+
+                                <label for="apellido2" class="form-label clo text-center mt-3"> Segundo Apellido:</label>
+                                <input class="form-control" id="apellido2" type="text" placeholder=" Segundo Apellido">
+
+                                <label for="edad" class="form-label clo text-center mt-3" >Edad:</label>
+                                <input type="number" class="form-control" id="edad" placeholder="edad">
+
+                                <label for="direccion" class="form-label clo text-center mt-3">Dirección:</label>
+                                <input class="form-control" id="direccion" type="text" placeholder="Dirección">
+
+                                <label for="correo" class="form-label col text-center mt-3">Correo Electrónico:</label>
+                                <input type="email" id="correo" class="form-control" placeholder="Email">
+
+
+
+                                <div class="botones mt-4 mb-4 text-center">
+
+                                    <button class="btn btn-info"  onclick="nuevo()">Registrar</button>
+                                    <button class="btn btn-secondary" onclick="listar()">Ver Lista</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="row">
+        <table class="table table-info table-hover table-bordered text-center">
+        <thead>
+          <tr>
+            <th scope="col">Identificación</th>
+            <th scope="col">Primer Nombre</th>
+            <th scope="col"> Segundo Nombre</th>
+            <th scope="col"> Primer Apellido</th>
+            <th scope="col">Segundo Apellido</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Correo Electrónico</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-usuario">
+
+          <script src="carga.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+          <script src="js/sweetAlert.js"></script>
+        </tbody>    
+      </table>
+    </table>
+</body>
+
+</html>
