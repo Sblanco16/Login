@@ -97,3 +97,14 @@ function validarcc(cedula) {
     }
     return false;
 }
+
+function Limpiar_Campos(){
+    document.getElementById("cedula").value = "";
+    document.getElementById("nombre").value = "";
+    document.getElementById("nombre2").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("apellido2").value = "";
+    document.getElementById("edad").value = "";
+    document.getElementById("direccion").value = "";
+    document.getElementById("correo").value = "";
+}
